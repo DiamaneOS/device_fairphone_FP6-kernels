@@ -8,7 +8,7 @@ source with `diamaneos kernel build`. The Android build reads them from
 
 - Sources: [kernel_manifest-fp6](https://github.com/DiamaneOS/kernel_manifest-fp6)
   at `1c9acf8`, Linux 6.1.177.
-- Tools: [tools](https://github.com/DiamaneOS/tools) at `42a50e0`, production
+- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `42a50e0`, production
   kernel configuration.
 - 389 modules (47 left out by policy), 14 device trees, 95 overlays.
 - Tested on a Fairphone 6, September 2026.
@@ -31,7 +31,7 @@ module's build banner (user, host and time).
 
 ## Building it yourself
 
-See [FP6-KERNEL.md](https://github.com/DiamaneOS/tools/blob/main/docs/FP6-KERNEL.md)
+See [FP6-KERNEL.md](https://github.com/DiamaneOS/diamaneos-tools/blob/main/docs/FP6-KERNEL.md)
 in the tools repository: `diamaneos kernel prepare` and `diamaneos kernel build`
 make this set from the pinned sources.
 
