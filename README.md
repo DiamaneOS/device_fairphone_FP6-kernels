@@ -6,13 +6,12 @@ source with `diamaneos kernel build`. The Android build reads them from
 
 ## This build
 
-- Used in DiamaneOS build r9t (tested on the phone, September 2026).
 - Sources: [kernel_manifest-fp6](https://github.com/DiamaneOS/kernel_manifest-fp6)
-  at `1c9acf8` (the r9t pins, unchanged on `android17` since), Linux 6.1.177.
+  at `1c9acf8`, Linux 6.1.177.
 - Tools: [tools](https://github.com/DiamaneOS/tools) at `42a50e0`, production
   kernel configuration.
-- Build run `20260927T100238Z`: 389 modules (47 left out by policy), 14 device
-  trees, 95 overlays.
+- 389 modules (47 left out by policy), 14 device trees, 95 overlays.
+- Tested on a Fairphone 6, September 2026.
 
 ## Contents
 
