@@ -7,11 +7,11 @@ source with `diamaneos kernel build`. The Android build reads them from
 ## This build
 
 - Sources: [kernel_manifest-fp6](https://github.com/DiamaneOS/kernel_manifest-fp6)
-  at `1c9acf8`, Linux 6.1.177.
-- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `42a50e0`, production
+  at `e58aad8`, Linux 6.1.177.
+- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `3fbed18`, production
   kernel configuration.
 - 389 modules (47 left out by policy), 14 device trees, 95 overlays.
-- Tested on a Fairphone 6, September 2026.
+- Tested on a Fairphone 6, October 2026.
 
 ## Contents
 
@@ -26,8 +26,7 @@ source with `diamaneos kernel build`. The Android build reads them from
 
 The kernel only loads modules signed with its own key. Each build makes a new
 key and keeps the private half on the build machine, so a rebuild from the same
-sources matches these files except for the module signatures and the camera
-module's build banner (user, host and time).
+sources matches these files except for the module signatures.
 
 ## Building it yourself
 
