@@ -1,14 +1,14 @@
 # Fairphone 6 kernel prebuilts
 
-The DiamaneOS kernel, modules and device trees for the Fairphone 6, built from
+The DiamaneOS kernel, modules and device tree for the Fairphone 6, built from
 source with `diamaneos kernel build`. The Android build reads them from
 `device/fairphone/FP6-kernel`.
 
 ## This build
 
-- Sources: [kernel_qcom-6.1](https://github.com/DiamaneOS/kernel_qcom-6.1) at `1dceccf`, Linux 6.1.177.
-- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `88a7836`, production kernel configuration.
-- 389 modules (48 left out by policy), 14 device trees, 95 overlays.
+- Sources: [kernel_qcom-6.1](https://github.com/DiamaneOS/kernel_qcom-6.1) at `974312c`, Linux 6.1.177.
+- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `7678904`, production kernel configuration.
+- 389 modules (48 left out by policy), 1 device tree, 95 overlays.
 - Built 10 October 2026.
 
 ## Contents
@@ -16,7 +16,7 @@ source with `diamaneos kernel build`. The Android build reads them from
 | Path | What it is |
 | --- | --- |
 | `Image` | The kernel |
-| `dtbs/`, `dtbo.img` | Device trees and overlays |
+| `dtbs/`, `dtbo.img` | Device tree and overlays |
 | `modules/` | Kernel modules, stripped and signed |
 | `BoardConfigKernel.mk` | Which modules go to vendor_boot, vendor_dlkm and system_dlkm, and their load order |
 | `device-kernel.mk` | Installs the kernel |
