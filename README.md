@@ -8,8 +8,6 @@ source with `diamaneos kernel build`. The Android build reads them from
 
 - Sources: [kernel_qcom-6.1](https://github.com/DiamaneOS/kernel_qcom-6.1) at `a5da9f5`, Linux 6.1.177.
 - Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `e22364e`, production kernel configuration.
-- 389 modules (48 left out by policy), 14 device trees, 95 overlays.
-- Built 9 October 2026.
 
 ## Contents
 
@@ -22,9 +20,12 @@ source with `diamaneos kernel build`. The Android build reads them from
 | `device-kernel.mk` | Installs the kernel |
 | `*-modules.blocklist` | Modules that must not load |
 
-The kernel only loads modules signed with its own key. Each build makes a new
-key and keeps the private half on the build machine, so a rebuild from the same
-sources matches these files except for the module signatures.
+## Module signatures
+
+- The kernel only loads modules signed with its own key.
+- Each build makes a new key; the private half stays on the build machine.
+- A rebuild from the same sources matches these files except for the module
+  signatures.
 
 ## Building it yourself
 
