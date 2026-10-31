@@ -6,10 +6,10 @@ source with `diamaneos kernel build`. The Android build reads them from
 
 ## This build
 
-- Sources: [kernel_qcom-6.1](https://github.com/DiamaneOS/kernel_qcom-6.1) at `51b4986`, Linux 6.1.177.
-- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `39573b6`, production kernel configuration.
-- 345 modules (70 left out by policy), 1 device tree, 95 overlays.
-- Built 27 October 2026.
+- Sources: [kernel_qcom-6.18](https://github.com/DiamaneOS/kernel_qcom-6.18) at `4c90b85` and [kernel_common-6.18](https://github.com/DiamaneOS/kernel_common-6.18) at `e92c3f1`, Linux 6.18.38.
+- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `1ea2296`, production kernel configuration policy.
+- 288 modules (43 left out by policy), 1 device tree, 95 overlays.
+- Built 31 October 2026.
 
 ## Contents
 
@@ -25,7 +25,7 @@ source with `diamaneos kernel build`. The Android build reads them from
 ## Module signatures
 
 - The kernel only loads modules signed with its own key.
-- Each build makes a new key; the private half stays on the build machine.
+- Each build makes a new key. The private half stays on the build machine.
 - A rebuild from the same sources matches these files except for the module
   signatures.
 
@@ -37,5 +37,5 @@ make this set from the pinned sources.
 
 ## Licence
 
-The kernel and its modules are GPL-2.0 (some modules dual-licensed); the
+The kernel and its modules are GPL-2.0 (some modules dual-licensed). The
 sources are at the revisions above.
