@@ -6,8 +6,8 @@ source with `diamaneos kernel build`. The Android build reads them from
 
 ## This build
 
-- Sources: [kernel_qcom-6.18](https://github.com/DiamaneOS/kernel_qcom-6.18) at `189b771` and [kernel_common-6.18](https://github.com/DiamaneOS/kernel_common-6.18) at `a379e65`, Linux 6.18.64.
-- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `550353d`, production kernel configuration policy.
+- Sources: [kernel_qcom-6.18](https://github.com/DiamaneOS/kernel_qcom-6.18) at `189b771` and [kernel_common-6.18](https://github.com/DiamaneOS/kernel_common-6.18) at `3695e7c`, Linux 6.18.64.
+- Tools: [diamaneos-tools](https://github.com/DiamaneOS/diamaneos-tools) at `a1394a9`, production kernel configuration policy.
 - 288 modules (43 left out by policy), 1 device tree, 95 overlays.
 - Built 25 November 2026.
 
